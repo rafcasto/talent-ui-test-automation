@@ -1,0 +1,18 @@
+[
+  {
+    "userName": "test",
+    "password": "test",
+    "role": "coach"
+  },
+  {
+    "userName": "rafcasto@gmail.com",
+    "password": "Gerardo8891$$",
+    "role": "teacher"
+  },
+  {
+    "userName": "rafcasto@gmail.com",
+    "password": "Gerardo8891$$",
+    "role": "admin"
+  }
+
+]

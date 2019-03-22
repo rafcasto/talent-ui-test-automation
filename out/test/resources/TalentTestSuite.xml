@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="generic.ReportListener"/>
+    </listeners>
+    <test verbose="9" preserve-order="true"
+          name="TalentTestSuite" parallel="methods" thread-count="3">
+        <classes>
+            <class  name="dashboard.LoginTest"  />
+
+        </classes>
+
+    </test>
+</suite>
