@@ -19,6 +19,10 @@ public class DashboardWebPage extends BasePage implements IDashboardPage {
     private static String loginBtnId = "login";
     private static By helpBlock = By.className("help-block");
     private static By warringMessage = By.className("alert-warning");
+    private static By downloadApp = By.id("downloadApp");
+    private static By appBox = By.className("app-box");
+    private static By learnMoreButton = By.id("learnMore");
+    private static By corporateSideMenu = By.id("sideBarMenuLinkhome");
     public DashboardWebPage(WebDriver driver){
         super(driver);
     }
@@ -39,12 +43,33 @@ public class DashboardWebPage extends BasePage implements IDashboardPage {
 
     @Override
     public void clickOnDownloadTheAppButton() {
+        driver.findElement(downloadApp).click();
+    }
 
+    @Override
+    public String getCurrentURl() {
+        return getURl();
     }
 
     @Override
     public void clickOnLearnMoreButton() {
+        driver.findElement(learnMoreButton).click();
+        ArrayList<String> tabs = new ArrayList<>(driver.getWindowHandles());
+        driver.switchTo().window(tabs.get(1));
+        //waitForElement(corporateSideMenu);
+    }
 
+    @Override
+    public List<String> getElementsOnDownloadAppModal() {
+        List<String> linksOnModalWindown = new ArrayList<>();
+        List<WebElement> elementsOnModalWindown = new ArrayList<>();
+        waitForElement(appBox);
+        elementsOnModalWindown = driver.findElements(appBox);
+        for(WebElement link: elementsOnModalWindown){
+            linksOnModalWindown.add((link.getText()));
+        }
+
+        return linksOnModalWindown;
     }
 
     @Override

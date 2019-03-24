@@ -25,4 +25,8 @@ public class BasePage {
        WebDriverWait wait = new WebDriverWait(driver,30 );
        wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
    }
+
+   public String getURl(){
+       return  driver.getCurrentUrl();
+   }
 }
