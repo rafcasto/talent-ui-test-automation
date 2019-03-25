@@ -4,7 +4,6 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import dto.UserDTO;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -14,9 +13,12 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.remote.UnreachableBrowserException;
 import org.openqa.selenium.safari.SafariDriver;
-import pages.IDashboardPage;
-import pages.web.DashboardWebPage;
-import java.util.stream.Collectors;
+import pages.ILoginPage;
+import pages.IWebPageWrapper;
+import pages.WebPageWrapper;
+import pages.web.LoginWebPageWeb;
+
+import java.util.concurrent.TimeUnit;
 import java.io.*;
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -27,22 +29,30 @@ import java.util.Properties;
 
 public class Context {
     private HashMap<PropertiesMapper, String> EnviromentProperties;
-    private IDashboardPage dashboardPage;
+   // private ILoginPage dashboardPage;
     private List<UserDTO> listOfUsers;
     final static Log logger = LogFactory.getLog(Context.class);
-
+    private IWebPageWrapper pageHandler;
     private WebDriver driver;
+
     public Context() {
         setEnvironmentProperties();
         startDriver();
     }
 
-    public IDashboardPage dashboardPage(){
+
+    public IWebPageWrapper getPageHandler(){
+        if(pageHandler == null){
+            pageHandler = new WebPageWrapper(getDriver());
+        }
+        return pageHandler;
+    }
+  /*  public ILoginPage dashboardPage(){
         if(dashboardPage == null){
-            dashboardPage = new DashboardWebPage(getDriver());
+            dashboardPage = new LoginWebPageWeb(getDriver());
         }
         return dashboardPage;
-    }
+    }*/
 
     //Need to improve code refactoring
     public UserDTO findUser(String role){
@@ -84,9 +94,20 @@ public class Context {
             logger.warn("No remote server was found starting local browser");
            driver =  startLocalBrowser();
         }
+        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+        driver.manage().timeouts().pageLoadTimeout(30,TimeUnit.SECONDS);
+        maximizeWindow();
         this.driver = driver;
         return  driver;
 
+    }
+
+    private void maximizeWindow(){
+        try{
+            driver.manage().window().maximize();
+        }catch (Exception ex){
+            logger.warn("Windown is already maximize");
+        }
     }
 
 

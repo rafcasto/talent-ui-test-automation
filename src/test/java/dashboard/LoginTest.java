@@ -23,8 +23,8 @@ public class LoginTest extends BaseTest {
         UserDTO user = getContext().findUser("admin");
         user.setUserName("");
         user.setPassword("");
-        getContext().dashboardPage().logInWith(user);
-        actualErrorMessages = getContext().dashboardPage().getListOfDisplayedErrors();
+        getContext().getPageHandler().loginPage().logInWith(user);
+        actualErrorMessages = getContext().getPageHandler().loginPage().getListOfDisplayedErrors();
         boolean actualErrorListIsEmpty = (actualErrorMessages == null || actualErrorMessages.isEmpty());
         Assert.assertFalse(actualErrorListIsEmpty, "No errors Are displayed on the login page");
         Assert.assertTrue(actualErrorMessages.contains(expectedEmailHelperMessage), "no message was found expected " + expectedEmailHelperMessage);
@@ -40,8 +40,8 @@ public class LoginTest extends BaseTest {
         List<String> actualErrorMessages = new ArrayList<>();
         UserDTO user = getContext().findUser("admin");
         user.setUserName("InvalidEmail");
-        getContext().dashboardPage().logInWith(user);
-        actualErrorMessages = getContext().dashboardPage().getListOfDisplayedErrors();
+        getContext().getPageHandler().loginPage().logInWith(user);
+        actualErrorMessages = getContext().getPageHandler().loginPage().getListOfDisplayedErrors();
         boolean actualErrorListIsEmpty = (actualErrorMessages == null || actualErrorMessages.isEmpty());
         Assert.assertFalse(actualErrorListIsEmpty, "No errors Are displayed on the login page");
         Assert.assertTrue(actualErrorMessages.contains(expectedEmailHelperMessage), "no message was found expected " + expectedEmailHelperMessage);
@@ -54,51 +54,75 @@ public class LoginTest extends BaseTest {
         String actualWarningMessages = "";
         UserDTO user = getContext().findUser("admin");
         user.setPassword("wrongPassword");
-        getContext().dashboardPage().logInWith(user);
-        actualWarningMessages = getContext().dashboardPage().getWarningMessage();
+        getContext().getPageHandler().loginPage().logInWith(user);
+        actualWarningMessages = getContext().getPageHandler().loginPage().getWarningMessage();
         Assert.assertEquals(actualWarningMessages, expectedWarningMessage, "Not the same message");
     }
 
-    @Test(testName = "UI", groups = {"default", "login"})
-    public void UserIsAbleToLoginWIthValidCredentials() {
+    @Test(testName = "UI", groups = {"default", "login","admin"})
+    public void AdminIsAbleToLoginWIthValidCredentials() {
+        List<String> expectedHeaders = new ArrayList<>();
+        expectedHeaders.add("Management");
+        expectedHeaders.add("Licenses");
+        expectedHeaders.add("Recent Interactions");
+        expectedHeaders.add("Rising Star");
+
         UserDTO user = getContext().findUser("admin");
-        getContext().dashboardPage().logInWith(user);
+        getContext().getPageHandler().loginPage().logInWith(user);
+        List<String> actualHeaders = getContext().getPageHandler().dashboardPage().getHeaderOnAdminSidePanels();
+       verifyStrings(expectedHeaders,actualHeaders);
+    }
+
+    @Test(testName = "UI", groups = {"default", "login","coach"})
+    public void CoachIsAbleToLoginWIthValidCredentials() {
+        //“Uploads” “Shared” “Feedback” and “Activity”
+        List<String> expectedFeatureOPtions = new ArrayList<String>();
+        expectedFeatureOPtions.add("Uploads");
+        expectedFeatureOPtions.add("Shared");
+        expectedFeatureOPtions.add("Feedback");
+        expectedFeatureOPtions.add("Activity");
+        UserDTO user = getContext().findUser("coach");
+        getContext().getPageHandler().loginPage().logInWith(user);
+        List<String> actualFeatures = getContext().getPageHandler().dashboardPage().getListOfAvailableFeatures();
+        verifyStrings(expectedFeatureOPtions,actualFeatures);
+
+
     }
 
     @Test(testName = "UI", groups = {"default", "login", "teacher"})
     public void TeacherIsAbleToLoginWIthValidCredentials() {
-        UserDTO user = getContext().findUser("admin");
-        getContext().dashboardPage().logInWith(user);
-        throw new SkipException("Test in progress");
+        List<String> expectedFeatureOPtions = new ArrayList<String>();
+        expectedFeatureOPtions.add("Uploads");
+        expectedFeatureOPtions.add("Shared");
+        expectedFeatureOPtions.add("Feedback");
+        expectedFeatureOPtions.add("Goals");
+        UserDTO user = getContext().findUser("teacher");
+        getContext().getPageHandler().loginPage().logInWith(user);
+        List<String> actualFeatures = getContext().getPageHandler().dashboardPage().getListOfAvailableFeatures();
+        verifyStrings(expectedFeatureOPtions,actualFeatures);
     }
 
 
 
-    @Test(testName = "UI", groups = {"default", "login", "teacher"})
-    public void ModalWindowOpenWhenUserClickOnDownloadLink() {
-        int iosLink = 0;
-        int androidLink = 1;
 
-        String expectedIosLink = "TORSH Talent for iOS";
-        String expectedAndroidLink = "TORSH Talent for Android";
-        getContext().dashboardPage().clickOnDownloadTheAppButton();
-        List<String> actualLinks = getContext().dashboardPage().getElementsOnDownloadAppModal();
-        boolean noLinks = actualLinks == null && actualLinks.size() <= 1;
-        if(noLinks){
-            Assert.assertFalse(noLinks,"No links or amount of links is not as expected ");
-        }
-        String actualIosLink = actualLinks.get(iosLink);
-        String actualAndroidLink = actualLinks.get(androidLink);
-        Assert.assertEquals(actualIosLink,expectedIosLink);
-        Assert.assertEquals(actualAndroidLink,expectedAndroidLink);
+
+    @Test(testName = "UI", groups = {"default", "login"})
+    public void ModalWindowOpenWhenUserClickOnDownloadLink() {
+
+        List<String> expectedLInks = new ArrayList<>();
+        expectedLInks.add("TORSH Talent for iOS");
+        expectedLInks.add("TORSH Talent for Android");
+        getContext().getPageHandler().loginPage().clickOnDownloadTheAppButton();
+        List<String> actualLinks = getContext().getPageHandler().loginPage().getElementsOnDownloadAppModal();
+        verifyStrings(expectedLInks,actualLinks);
 
     }
 
     @Test(testName = "UI", groups = {"default", "login", "teacher"})
     public void CorporatePageIsOpenWhenUserClickOnLearnMore() {
         String expectedUrl = "https://www.torsh.co/";
-        getContext().dashboardPage().clickOnLearnMoreButton();
-        String actualURl = getContext().dashboardPage().getCurrentURl();
+        getContext().getPageHandler().loginPage().clickOnLearnMoreButton();
+        String actualURl = getContext().getPageHandler().loginPage().getCurrentURl();
         Assert.assertEquals(expectedUrl,actualURl);
     }
 
