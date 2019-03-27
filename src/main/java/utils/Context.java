@@ -94,8 +94,8 @@ public class Context {
             logger.warn("No remote server was found starting local browser");
            driver =  startLocalBrowser();
         }
-        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-        driver.manage().timeouts().pageLoadTimeout(30,TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+        driver.manage().timeouts().pageLoadTimeout(60,TimeUnit.SECONDS);
         maximizeWindow();
         this.driver = driver;
         return  driver;

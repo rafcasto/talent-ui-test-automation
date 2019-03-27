@@ -13,8 +13,8 @@ import java.util.List;
 
 public class LoginWebPageWeb extends WebBasePage implements ILoginPage {
 
-    private static String userNameId = "email";
-    private static String passwordId = "password";
+    private static By userNameId = By.id("email");
+    private static By passwordId = By.id("password");
     private static String loginBtnId = "login";
     private static By helpBlock = By.className("help-block");
     private static By warringMessage = By.className("alert-warning");
@@ -29,10 +29,14 @@ public class LoginWebPageWeb extends WebBasePage implements ILoginPage {
 
     @Override
     public void logInWith(UserDTO user) {
-        if(!user.getUserName().isEmpty())
-        sendKeys(By.id(userNameId),user.getUserName());
-        if(!user.getPassword().isEmpty())
-        sendKeys(By.id(passwordId),user.getPassword());
+        if(!user.getUserName().isEmpty()){
+            sendKeys(userNameId,user.getUserName());
+        }
+
+        if(!user.getPassword().isEmpty()){
+            sendKeys(passwordId,user.getPassword());
+        }
+
         driver.findElement(By.id(loginBtnId)).click();
     }
 

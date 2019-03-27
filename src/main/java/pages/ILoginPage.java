@@ -16,4 +16,5 @@ public interface ILoginPage {
     List<String> getListOfDisplayedErrors();
 
 
+
 }

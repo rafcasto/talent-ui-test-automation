@@ -6,6 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.concurrent.TimeUnit;
@@ -17,16 +18,46 @@ public class WebBasePage {
     }
 
    public void sendKeys(By locator,String text){
-       Actions actions = new Actions(driver);
+
+
        WebElement textElement = driver.findElement(locator);
+       privateSendText(textElement,text);
+   }
+
+   public void sendKeys(WebElement element,String text){
+       privateSendText(element,text);
+   }
+
+   private void privateSendText(WebElement element,String text){
+       Actions actions = new Actions(driver);
        actions
-               .sendKeys(textElement,text).build().perform();
+               .sendKeys(element,text).build().perform();
    }
 
 
    public void waitForElement(By locator){
        WebDriverWait wait = new WebDriverWait(driver,30 );
        wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+   }
+
+   public void waitForElementToBeClick(By locator){
+       WebDriverWait wait = new WebDriverWait(driver,30 );
+       waitForElement(locator);
+       wait.until(ExpectedConditions.invisibilityOfElementLocated(locator));
+   }
+
+   public void seclectFromDropdown(By locator,String value){
+       waitForElement(locator);
+       //driver.findElement(createNewDropdown).click();
+       WebElement dropdownCreateFile = driver.findElement(locator);
+       Select createFile = new Select(dropdownCreateFile);
+
+       try{
+           createFile.selectByValue(value);
+       }catch (Exception ex){
+           //log exception
+       }
+
    }
 
    public String getURl(){

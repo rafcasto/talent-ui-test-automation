@@ -46,7 +46,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>Mar 25, 2019 10:11:39 PM</span>
+			<span class='label blue darken-3 suite-start-time'>Mar 27, 2019 07:14:25 PM</span>
 			</a>
 		</ul>
 	</div>
@@ -63,7 +63,6 @@
 				<ul id='tests-toggle' class='dropdown-content'>
 										<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
 					<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
-					<li status='skip'><a href='#!'>Skip <i class='material-icons cyan-text'>redo</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -76,11 +75,11 @@
 				</a>
 				<ul id='category-toggle' class='dropdown-content'>
 					<li><a href='#'>default</a></li>
-					<li><a href='#'>admin</a></li>
+					<li><a href='#'>teacher</a></li>
 					<li><a href='#'>login</a></li>
+					<li><a href='#'>admin</a></li>
 					<li><a href='#'>coach</a></li>
 					<li><a href='#'>error</a></li>
-					<li><a href='#'>teacher</a></li>
 					<li class='divider'></li>
 					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
 				</ul>
@@ -121,10 +120,10 @@
                     <canvas id='parent-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='60%'><span class='strong'>6</span> test(s) passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='77.778%'><span class='strong'>7</span> test(s) passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='20%'>2</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>2</span> others
+                    <span class='strong tooltipped' data-position='top' data-tooltip='22.222%'>2</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
                 </div>
             </div>
         </div>
@@ -144,15 +143,57 @@
 			<ul id='test-collection' class='test-collection'>
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='1'>
 					<div class='test-heading'>
-						<span class='test-name'>AdminIsAbleToLoginWIthValidCredentials</span>
-						<span class='test-time'>Mar 25, 2019 10:12:00 PM</span>
+						<span class='test-name'>CorporatePageIsOpenWhenUserClickOnLearnMore</span>
+						<span class='test-time'>Mar 27, 2019 07:14:52 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Mar 25, 2019 10:12:00 PM</span>
-	<span class='label end-time'>Mar 25, 2019 10:12:10 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 9s+985ms</span>
+	<span class='label start-time'>Mar 27, 2019 07:14:52 PM</span>
+	<span class='label end-time'>Mar 27, 2019 07:16:01 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 1m 9s+2ms</span>
+</div>
+<div class='test-attributes'>
+	<div class='category-list'>
+		<span class='category label'>default</span>
+		<span class='category label'>teacher</span>
+		<span class='category label'>login</span>
+	</div>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>7:16:01 PM</td>
+				<td class='step-details'>
+						Test passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='2'>
+					<div class='test-heading'>
+						<span class='test-name'>AdminIsAbleToLoginWIthValidCredentials</span>
+						<span class='test-time'>Mar 27, 2019 07:14:55 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Mar 27, 2019 07:14:55 PM</span>
+	<span class='label end-time'>Mar 27, 2019 07:15:10 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 15s+46ms</span>
 </div>
 <div class='test-attributes'>
 	<div class='category-list'>
@@ -173,66 +214,9 @@
 		<tbody>
 			<tr class='log' status='pass'>
 				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-				<td class='timestamp'>10:12:10 PM</td>
+				<td class='timestamp'>7:15:10 PM</td>
 				<td class='step-details'>
 						Test passed
-					
-				</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
-					</div>
-				</li>
-				<li class='test displayed active  skip' status='skip' bdd='false' test-id='2'>
-					<div class='test-heading'>
-						<span class='test-name'>CoachRecievesDocumentSharedByTeacher</span>
-						<span class='test-time'>Mar 25, 2019 10:12:01 PM</span>
-						<span class='test-status right skip'>skip</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Mar 25, 2019 10:12:01 PM</span>
-	<span class='label end-time'>Mar 25, 2019 10:12:01 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+258ms</span>
-</div>
-<div class='test-attributes'>
-	<div class='category-list'>
-		<span class='category label'>default</span>
-		<span class='category label'>login</span>
-		<span class='category label'>coach</span>
-	</div>
-</div>
-<div class='test-steps'>
-	<table class='bordered table-results'>
-		<thead>
-			<tr>
-				<th>Status</th>
-				<th>Timestamp</th>
-				<th>Details</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr class='log' status='skip'>
-				<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
-				<td class='timestamp'>10:12:01 PM</td>
-				<td class='step-details'>
-						<textarea disabled class="code-block">org.testng.SkipException: Test in progress
-	at dashboard.LoginTest.CoachRecievesDocumentSharedByTeacher(LoginTest.java:136)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:844)
-</textarea>
 					
 				</td>
 			</tr>
@@ -244,14 +228,14 @@
 				<li class='test displayed active  fail' status='fail' bdd='false' test-id='3'>
 					<div class='test-heading'>
 						<span class='test-name'>CoachIsAbleToLoginWIthValidCredentials</span>
-						<span class='test-time'>Mar 25, 2019 10:12:02 PM</span>
+						<span class='test-time'>Mar 27, 2019 07:14:55 PM</span>
 						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Mar 25, 2019 10:12:02 PM</span>
-	<span class='label end-time'>Mar 25, 2019 10:12:10 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 8s+271ms</span>
+	<span class='label start-time'>Mar 27, 2019 07:14:55 PM</span>
+	<span class='label end-time'>Mar 27, 2019 07:15:11 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 16s+35ms</span>
 </div>
 <div class='test-attributes'>
 	<div class='category-list'>
@@ -272,7 +256,7 @@
 		<tbody>
 			<tr class='log' status='fail'>
 				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-				<td class='timestamp'>10:12:10 PM</td>
+				<td class='timestamp'>7:15:11 PM</td>
 				<td class='step-details'>
 						<textarea disabled class="code-block">java.lang.AssertionError: expected [Uploads] but found [Activity]
 	at org.testng.Assert.fail(Assert.java:96)
@@ -282,7 +266,7 @@
 	at org.testng.Assert.assertEquals(Assert.java:453)
 	at org.testng.Assert.assertEquals(Assert.java:463)
 	at generic.BaseTest.verifyStrings(BaseTest.java:52)
-	at dashboard.LoginTest.CoachIsAbleToLoginWIthValidCredentials(LoginTest.java:87)
+	at dashboard.LoginTest.CoachIsAbleToLoginWIthValidCredentials(LoginTest.java:88)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -307,15 +291,15 @@
 				</li>
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='4'>
 					<div class='test-heading'>
-						<span class='test-name'>ErrorMessageShowsWhenEnteringAnInvalidPassword</span>
-						<span class='test-time'>Mar 25, 2019 10:12:33 PM</span>
+						<span class='test-name'>ErrorMessageShowsWhenEnteringAnInvalidEmail</span>
+						<span class='test-time'>Mar 27, 2019 07:16:37 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Mar 25, 2019 10:12:33 PM</span>
-	<span class='label end-time'>Mar 25, 2019 10:12:37 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 3s+482ms</span>
+	<span class='label start-time'>Mar 27, 2019 07:16:37 PM</span>
+	<span class='label end-time'>Mar 27, 2019 07:16:44 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 6s+628ms</span>
 </div>
 <div class='test-attributes'>
 	<div class='category-list'>
@@ -335,7 +319,7 @@
 		<tbody>
 			<tr class='log' status='pass'>
 				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-				<td class='timestamp'>10:12:37 PM</td>
+				<td class='timestamp'>7:16:44 PM</td>
 				<td class='step-details'>
 						Test passed
 					
@@ -348,15 +332,15 @@
 				</li>
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='5'>
 					<div class='test-heading'>
-						<span class='test-name'>ErrorMessageShowsWhenEnteringAnInvalidEmail</span>
-						<span class='test-time'>Mar 25, 2019 10:12:34 PM</span>
+						<span class='test-name'>ErrorMessageShowsWhenEnteringAnInvalidPassword</span>
+						<span class='test-time'>Mar 27, 2019 07:16:37 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Mar 25, 2019 10:12:34 PM</span>
-	<span class='label end-time'>Mar 25, 2019 10:12:35 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+293ms</span>
+	<span class='label start-time'>Mar 27, 2019 07:16:37 PM</span>
+	<span class='label end-time'>Mar 27, 2019 07:16:47 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 9s+256ms</span>
 </div>
 <div class='test-attributes'>
 	<div class='category-list'>
@@ -376,7 +360,7 @@
 		<tbody>
 			<tr class='log' status='pass'>
 				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-				<td class='timestamp'>10:12:35 PM</td>
+				<td class='timestamp'>7:16:47 PM</td>
 				<td class='step-details'>
 						Test passed
 					
@@ -389,20 +373,19 @@
 				</li>
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='6'>
 					<div class='test-heading'>
-						<span class='test-name'>CorporatePageIsOpenWhenUserClickOnLearnMore</span>
-						<span class='test-time'>Mar 25, 2019 10:12:35 PM</span>
+						<span class='test-name'>ErrorMessageShowsWhenLoginWithoutCredentials</span>
+						<span class='test-time'>Mar 27, 2019 07:16:38 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Mar 25, 2019 10:12:35 PM</span>
-	<span class='label end-time'>Mar 25, 2019 10:12:41 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 6s+810ms</span>
+	<span class='label start-time'>Mar 27, 2019 07:16:38 PM</span>
+	<span class='label end-time'>Mar 27, 2019 07:16:42 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 4s+67ms</span>
 </div>
 <div class='test-attributes'>
 	<div class='category-list'>
-		<span class='category label'>default</span>
-		<span class='category label'>teacher</span>
+		<span class='category label'>error</span>
 		<span class='category label'>login</span>
 	</div>
 </div>
@@ -418,7 +401,7 @@
 		<tbody>
 			<tr class='log' status='pass'>
 				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-				<td class='timestamp'>10:12:41 PM</td>
+				<td class='timestamp'>7:16:42 PM</td>
 				<td class='step-details'>
 						Test passed
 					
@@ -432,14 +415,14 @@
 				<li class='test displayed active  fail' status='fail' bdd='false' test-id='7'>
 					<div class='test-heading'>
 						<span class='test-name'>ModalWindowOpenWhenUserClickOnDownloadLink</span>
-						<span class='test-time'>Mar 25, 2019 10:12:54 PM</span>
+						<span class='test-time'>Mar 27, 2019 07:17:33 PM</span>
 						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Mar 25, 2019 10:12:54 PM</span>
-	<span class='label end-time'>Mar 25, 2019 10:12:55 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+895ms</span>
+	<span class='label start-time'>Mar 27, 2019 07:17:33 PM</span>
+	<span class='label end-time'>Mar 27, 2019 07:17:34 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+930ms</span>
 </div>
 <div class='test-attributes'>
 	<div class='category-list'>
@@ -459,7 +442,7 @@
 		<tbody>
 			<tr class='log' status='fail'>
 				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-				<td class='timestamp'>10:12:55 PM</td>
+				<td class='timestamp'>7:17:34 PM</td>
 				<td class='step-details'>
 						<textarea disabled class="code-block">java.lang.AssertionError: expected [TORSH Talent for iOS] but found [T Uploader for IOS]
 	at org.testng.Assert.fail(Assert.java:96)
@@ -469,7 +452,7 @@
 	at org.testng.Assert.assertEquals(Assert.java:453)
 	at org.testng.Assert.assertEquals(Assert.java:463)
 	at generic.BaseTest.verifyStrings(BaseTest.java:52)
-	at dashboard.LoginTest.ModalWindowOpenWhenUserClickOnDownloadLink(LoginTest.java:117)
+	at dashboard.LoginTest.ModalWindowOpenWhenUserClickOnDownloadLink(LoginTest.java:118)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -494,19 +477,20 @@
 				</li>
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='8'>
 					<div class='test-heading'>
-						<span class='test-name'>ErrorMessageShowsWhenLoginWithoutCredentials</span>
-						<span class='test-time'>Mar 25, 2019 10:12:54 PM</span>
+						<span class='test-name'>TeacherIsAbleToLoginWIthValidCredentials</span>
+						<span class='test-time'>Mar 27, 2019 07:17:34 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Mar 25, 2019 10:12:54 PM</span>
-	<span class='label end-time'>Mar 25, 2019 10:12:55 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+397ms</span>
+	<span class='label start-time'>Mar 27, 2019 07:17:34 PM</span>
+	<span class='label end-time'>Mar 27, 2019 07:17:39 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 5s+202ms</span>
 </div>
 <div class='test-attributes'>
 	<div class='category-list'>
-		<span class='category label'>error</span>
+		<span class='category label'>default</span>
+		<span class='category label'>teacher</span>
 		<span class='category label'>login</span>
 	</div>
 </div>
@@ -522,7 +506,7 @@
 		<tbody>
 			<tr class='log' status='pass'>
 				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-				<td class='timestamp'>10:12:55 PM</td>
+				<td class='timestamp'>7:17:39 PM</td>
 				<td class='step-details'>
 						Test passed
 					
@@ -533,74 +517,17 @@
 </div>
 					</div>
 				</li>
-				<li class='test displayed active  skip' status='skip' bdd='false' test-id='9'>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='9'>
 					<div class='test-heading'>
 						<span class='test-name'>TeacherCreatesAndShareAdocumentToCoach</span>
-						<span class='test-time'>Mar 25, 2019 10:12:57 PM</span>
-						<span class='test-status right skip'>skip</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Mar 25, 2019 10:12:57 PM</span>
-	<span class='label end-time'>Mar 25, 2019 10:12:57 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+3ms</span>
-</div>
-<div class='test-attributes'>
-	<div class='category-list'>
-		<span class='category label'>default</span>
-		<span class='category label'>teacher</span>
-		<span class='category label'>login</span>
-	</div>
-</div>
-<div class='test-steps'>
-	<table class='bordered table-results'>
-		<thead>
-			<tr>
-				<th>Status</th>
-				<th>Timestamp</th>
-				<th>Details</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr class='log' status='skip'>
-				<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
-				<td class='timestamp'>10:12:57 PM</td>
-				<td class='step-details'>
-						<textarea disabled class="code-block">org.testng.SkipException: Test in progress
-	at dashboard.LoginTest.TeacherCreatesAndShareAdocumentToCoach(LoginTest.java:131)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:844)
-</textarea>
-					
-				</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
-					</div>
-				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='10'>
-					<div class='test-heading'>
-						<span class='test-name'>TeacherIsAbleToLoginWIthValidCredentials</span>
-						<span class='test-time'>Mar 25, 2019 10:13:10 PM</span>
+						<span class='test-time'>Mar 27, 2019 07:17:35 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Mar 25, 2019 10:13:10 PM</span>
-	<span class='label end-time'>Mar 25, 2019 10:13:13 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 3s+395ms</span>
+	<span class='label start-time'>Mar 27, 2019 07:17:35 PM</span>
+	<span class='label end-time'>Mar 27, 2019 07:18:59 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 1m 23s+900ms</span>
 </div>
 <div class='test-attributes'>
 	<div class='category-list'>
@@ -621,7 +548,7 @@
 		<tbody>
 			<tr class='log' status='pass'>
 				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-				<td class='timestamp'>10:13:13 PM</td>
+				<td class='timestamp'>7:18:59 PM</td>
 				<td class='step-details'>
 						Test passed
 					
@@ -674,16 +601,15 @@
 					<div class='category-heading'>
 						<span class='category-name'>default</span>
 						<span class='category-status right'>
-						<span class='label pass'>3</span>
+						<span class='label pass'>4</span>
 						<span class='label fail'>2</span>
-						<span class='label others'>2</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span status="pass" class='label green accent-4 white-text'>Passed: 3</span>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 4</span>
 							<span status="fail" class='label red lighten-1 white-text'>Failed: 2</span>
-							<span status="skip" class='label yellow darken-2 white-text'>Skipped: 2</span>
+							
 						</div>
 						<div class='category-tests'>
 							<table class='bordered table-results'>
@@ -696,38 +622,150 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Mar 25, 2019 10:12:00 PM</td>
-										<td class='linked' test-id='1'>AdminIsAbleToLoginWIthValidCredentials</td>
+										<td>Mar 27, 2019 07:14:52 PM</td>
+										<td class='linked' test-id='1'>CorporatePageIsOpenWhenUserClickOnLearnMore</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Mar 25, 2019 10:12:01 PM</td>
-										<td class='linked' test-id='2'>CoachRecievesDocumentSharedByTeacher</td>
-										<td><span class='test-status skip'>skip</span></td>
+										<td>Mar 27, 2019 07:14:55 PM</td>
+										<td class='linked' test-id='2'>AdminIsAbleToLoginWIthValidCredentials</td>
+										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Mar 25, 2019 10:12:02 PM</td>
+										<td>Mar 27, 2019 07:14:55 PM</td>
 										<td class='linked' test-id='3'>CoachIsAbleToLoginWIthValidCredentials</td>
 										<td><span class='test-status fail'>fail</span></td>
 									</tr>
 									<tr>
-										<td>Mar 25, 2019 10:12:35 PM</td>
-										<td class='linked' test-id='6'>CorporatePageIsOpenWhenUserClickOnLearnMore</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Mar 25, 2019 10:12:54 PM</td>
+										<td>Mar 27, 2019 07:17:33 PM</td>
 										<td class='linked' test-id='7'>ModalWindowOpenWhenUserClickOnDownloadLink</td>
 										<td><span class='test-status fail'>fail</span></td>
 									</tr>
 									<tr>
-										<td>Mar 25, 2019 10:12:57 PM</td>
-										<td class='linked' test-id='9'>TeacherCreatesAndShareAdocumentToCoach</td>
-										<td><span class='test-status skip'>skip</span></td>
+										<td>Mar 27, 2019 07:17:34 PM</td>
+										<td class='linked' test-id='8'>TeacherIsAbleToLoginWIthValidCredentials</td>
+										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Mar 25, 2019 10:13:10 PM</td>
-										<td class='linked' test-id='10'>TeacherIsAbleToLoginWIthValidCredentials</td>
+										<td>Mar 27, 2019 07:17:35 PM</td>
+										<td class='linked' test-id='9'>TeacherCreatesAndShareAdocumentToCoach</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>teacher</span>
+						<span class='category-status right'>
+						<span class='label pass'>3</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 3</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Mar 27, 2019 07:14:52 PM</td>
+										<td class='linked' test-id='1'>CorporatePageIsOpenWhenUserClickOnLearnMore</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 27, 2019 07:17:34 PM</td>
+										<td class='linked' test-id='8'>TeacherIsAbleToLoginWIthValidCredentials</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 27, 2019 07:17:35 PM</td>
+										<td class='linked' test-id='9'>TeacherCreatesAndShareAdocumentToCoach</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>login</span>
+						<span class='category-status right'>
+						<span class='label pass'>7</span>
+						<span class='label fail'>2</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 7</span>
+							<span status="fail" class='label red lighten-1 white-text'>Failed: 2</span>
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Mar 27, 2019 07:14:52 PM</td>
+										<td class='linked' test-id='1'>CorporatePageIsOpenWhenUserClickOnLearnMore</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 27, 2019 07:14:55 PM</td>
+										<td class='linked' test-id='2'>AdminIsAbleToLoginWIthValidCredentials</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 27, 2019 07:14:55 PM</td>
+										<td class='linked' test-id='3'>CoachIsAbleToLoginWIthValidCredentials</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>Mar 27, 2019 07:16:37 PM</td>
+										<td class='linked' test-id='4'>ErrorMessageShowsWhenEnteringAnInvalidEmail</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 27, 2019 07:16:37 PM</td>
+										<td class='linked' test-id='5'>ErrorMessageShowsWhenEnteringAnInvalidPassword</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 27, 2019 07:16:38 PM</td>
+										<td class='linked' test-id='6'>ErrorMessageShowsWhenLoginWithoutCredentials</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 27, 2019 07:17:33 PM</td>
+										<td class='linked' test-id='7'>ModalWindowOpenWhenUserClickOnDownloadLink</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>Mar 27, 2019 07:17:34 PM</td>
+										<td class='linked' test-id='8'>TeacherIsAbleToLoginWIthValidCredentials</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 27, 2019 07:17:35 PM</td>
+										<td class='linked' test-id='9'>TeacherCreatesAndShareAdocumentToCoach</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
@@ -759,88 +797,8 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Mar 25, 2019 10:12:00 PM</td>
-										<td class='linked' test-id='1'>AdminIsAbleToLoginWIthValidCredentials</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>login</span>
-						<span class='category-status right'>
-						<span class='label pass'>6</span>
-						<span class='label fail'>2</span>
-						<span class='label others'>2</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							<span status="pass" class='label green accent-4 white-text'>Passed: 6</span>
-							<span status="fail" class='label red lighten-1 white-text'>Failed: 2</span>
-							<span status="skip" class='label yellow darken-2 white-text'>Skipped: 2</span>
-						</div>
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Mar 25, 2019 10:12:00 PM</td>
-										<td class='linked' test-id='1'>AdminIsAbleToLoginWIthValidCredentials</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Mar 25, 2019 10:12:01 PM</td>
-										<td class='linked' test-id='2'>CoachRecievesDocumentSharedByTeacher</td>
-										<td><span class='test-status skip'>skip</span></td>
-									</tr>
-									<tr>
-										<td>Mar 25, 2019 10:12:02 PM</td>
-										<td class='linked' test-id='3'>CoachIsAbleToLoginWIthValidCredentials</td>
-										<td><span class='test-status fail'>fail</span></td>
-									</tr>
-									<tr>
-										<td>Mar 25, 2019 10:12:33 PM</td>
-										<td class='linked' test-id='4'>ErrorMessageShowsWhenEnteringAnInvalidPassword</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Mar 25, 2019 10:12:34 PM</td>
-										<td class='linked' test-id='5'>ErrorMessageShowsWhenEnteringAnInvalidEmail</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Mar 25, 2019 10:12:35 PM</td>
-										<td class='linked' test-id='6'>CorporatePageIsOpenWhenUserClickOnLearnMore</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Mar 25, 2019 10:12:54 PM</td>
-										<td class='linked' test-id='7'>ModalWindowOpenWhenUserClickOnDownloadLink</td>
-										<td><span class='test-status fail'>fail</span></td>
-									</tr>
-									<tr>
-										<td>Mar 25, 2019 10:12:54 PM</td>
-										<td class='linked' test-id='8'>ErrorMessageShowsWhenLoginWithoutCredentials</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Mar 25, 2019 10:12:57 PM</td>
-										<td class='linked' test-id='9'>TeacherCreatesAndShareAdocumentToCoach</td>
-										<td><span class='test-status skip'>skip</span></td>
-									</tr>
-									<tr>
-										<td>Mar 25, 2019 10:13:10 PM</td>
-										<td class='linked' test-id='10'>TeacherIsAbleToLoginWIthValidCredentials</td>
+										<td>Mar 27, 2019 07:14:55 PM</td>
+										<td class='linked' test-id='2'>AdminIsAbleToLoginWIthValidCredentials</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
@@ -853,14 +811,13 @@
 						<span class='category-name'>coach</span>
 						<span class='category-status right'>
 						<span class='label fail'>1</span>
-						<span class='label others'>1</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
 							
 							<span status="fail" class='label red lighten-1 white-text'>Failed: 1</span>
-							<span status="skip" class='label yellow darken-2 white-text'>Skipped: 1</span>
+							
 						</div>
 						<div class='category-tests'>
 							<table class='bordered table-results'>
@@ -873,12 +830,7 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Mar 25, 2019 10:12:01 PM</td>
-										<td class='linked' test-id='2'>CoachRecievesDocumentSharedByTeacher</td>
-										<td><span class='test-status skip'>skip</span></td>
-									</tr>
-									<tr>
-										<td>Mar 25, 2019 10:12:02 PM</td>
+										<td>Mar 27, 2019 07:14:55 PM</td>
 										<td class='linked' test-id='3'>CoachIsAbleToLoginWIthValidCredentials</td>
 										<td><span class='test-status fail'>fail</span></td>
 									</tr>
@@ -911,62 +863,18 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Mar 25, 2019 10:12:33 PM</td>
-										<td class='linked' test-id='4'>ErrorMessageShowsWhenEnteringAnInvalidPassword</td>
+										<td>Mar 27, 2019 07:16:37 PM</td>
+										<td class='linked' test-id='4'>ErrorMessageShowsWhenEnteringAnInvalidEmail</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Mar 25, 2019 10:12:34 PM</td>
-										<td class='linked' test-id='5'>ErrorMessageShowsWhenEnteringAnInvalidEmail</td>
+										<td>Mar 27, 2019 07:16:37 PM</td>
+										<td class='linked' test-id='5'>ErrorMessageShowsWhenEnteringAnInvalidPassword</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Mar 25, 2019 10:12:54 PM</td>
-										<td class='linked' test-id='8'>ErrorMessageShowsWhenLoginWithoutCredentials</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>teacher</span>
-						<span class='category-status right'>
-						<span class='label pass'>2</span>
-						<span class='label others'>1</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							<span status="pass" class='label green accent-4 white-text'>Passed: 2</span>
-							
-							<span status="skip" class='label yellow darken-2 white-text'>Skipped: 1</span>
-						</div>
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Mar 25, 2019 10:12:35 PM</td>
-										<td class='linked' test-id='6'>CorporatePageIsOpenWhenUserClickOnLearnMore</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Mar 25, 2019 10:12:57 PM</td>
-										<td class='linked' test-id='9'>TeacherCreatesAndShareAdocumentToCoach</td>
-										<td><span class='test-status skip'>skip</span></td>
-									</tr>
-									<tr>
-										<td>Mar 25, 2019 10:13:10 PM</td>
-										<td class='linked' test-id='10'>TeacherIsAbleToLoginWIthValidCredentials</td>
+										<td>Mar 27, 2019 07:16:38 PM</td>
+										<td class='linked' test-id='6'>ErrorMessageShowsWhenLoginWithoutCredentials</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
@@ -1003,71 +911,6 @@
 			<ul id='exception-collection' class='exception-collection'>
 				<li class='exception displayed active'>
 					<div class='exception-heading'>
-						<span class='exception-name'>org.testng.SkipException</span>
-						<span class='exception-count right'><span class='label red lighten-1 white-text'>2</span></span>
-					</div>
-					<div class='exception-content hide'>
-						<div class='exception-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Mar 25, 2019 10:12:01 PM</td>
-										<td class='linked' test-id='2'>CoachRecievesDocumentSharedByTeacher</td>
-										<td>
-											<textarea disabled class="code-block">org.testng.SkipException: Test in progress
-	at dashboard.LoginTest.CoachRecievesDocumentSharedByTeacher(LoginTest.java:136)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:844)
-</textarea>
-										</td>
-									</tr>
-									<tr>
-										<td>Mar 25, 2019 10:12:57 PM</td>
-										<td class='linked' test-id='9'>TeacherCreatesAndShareAdocumentToCoach</td>
-										<td>
-											<textarea disabled class="code-block">org.testng.SkipException: Test in progress
-	at dashboard.LoginTest.TeacherCreatesAndShareAdocumentToCoach(LoginTest.java:131)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:844)
-</textarea>
-										</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='exception displayed active'>
-					<div class='exception-heading'>
 						<span class='exception-name'>java.lang.AssertionError</span>
 						<span class='exception-count right'><span class='label red lighten-1 white-text'>2</span></span>
 					</div>
@@ -1083,7 +926,7 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Mar 25, 2019 10:12:02 PM</td>
+										<td>Mar 27, 2019 07:14:55 PM</td>
 										<td class='linked' test-id='3'>CoachIsAbleToLoginWIthValidCredentials</td>
 										<td>
 											<textarea disabled class="code-block">java.lang.AssertionError: expected [Uploads] but found [Activity]
@@ -1094,7 +937,7 @@
 	at org.testng.Assert.assertEquals(Assert.java:453)
 	at org.testng.Assert.assertEquals(Assert.java:463)
 	at generic.BaseTest.verifyStrings(BaseTest.java:52)
-	at dashboard.LoginTest.CoachIsAbleToLoginWIthValidCredentials(LoginTest.java:87)
+	at dashboard.LoginTest.CoachIsAbleToLoginWIthValidCredentials(LoginTest.java:88)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -1112,7 +955,7 @@
 										</td>
 									</tr>
 									<tr>
-										<td>Mar 25, 2019 10:12:54 PM</td>
+										<td>Mar 27, 2019 07:17:33 PM</td>
 										<td class='linked' test-id='7'>ModalWindowOpenWhenUserClickOnDownloadLink</td>
 										<td>
 											<textarea disabled class="code-block">java.lang.AssertionError: expected [TORSH Talent for iOS] but found [T Uploader for IOS]
@@ -1123,7 +966,7 @@
 	at org.testng.Assert.assertEquals(Assert.java:453)
 	at org.testng.Assert.assertEquals(Assert.java:463)
 	at generic.BaseTest.verifyStrings(BaseTest.java:52)
-	at dashboard.LoginTest.ModalWindowOpenWhenUserClickOnDownloadLink(LoginTest.java:117)
+	at dashboard.LoginTest.ModalWindowOpenWhenUserClickOnDownloadLink(LoginTest.java:118)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -1162,7 +1005,7 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Tests
-					<div class='panel-lead'>10</div>
+					<div class='panel-lead'>9</div>
 				</div>
 			</div>
 			<div class='col s2'>
@@ -1174,19 +1017,19 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Mar 25, 2019 10:11:39 PM</div>
+					<div class='panel-lead'>Mar 27, 2019 07:14:25 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Mar 25, 2019 10:13:14 PM</div>
+			 		<div class='panel-lead'>Mar 27, 2019 07:18:59 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 1m 34s+841ms</div>
+					<div class='panel-lead'>0h 4m 33s+978ms</div>
 				</div>
 			</div>
 			<div class='col s6'>
@@ -1203,11 +1046,29 @@
 						</tr>
 						<tr>
 							<td>default</td>
-							<td>3</td>
+							<td>4</td>
 							<td>2</td>
 							<td>0</td>
 							<td>
-									42.857%
+									66.667%
+							</td>
+						</tr>
+						<tr>
+							<td>teacher</td>
+							<td>3</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>login</td>
+							<td>7</td>
+							<td>2</td>
+							<td>0</td>
+							<td>
+									77.778%
 							</td>
 						</tr>
 						<tr>
@@ -1217,15 +1078,6 @@
 							<td>0</td>
 							<td>
 									100%
-							</td>
-						</tr>
-						<tr>
-							<td>login</td>
-							<td>6</td>
-							<td>2</td>
-							<td>0</td>
-							<td>
-									60%
 							</td>
 						</tr>
 						<tr>
@@ -1246,15 +1098,6 @@
 									100%
 							</td>
 						</tr>
-						<tr>
-							<td>teacher</td>
-							<td>2</td>
-							<td>0</td>
-							<td>0</td>
-							<td>
-									66.667%
-							</td>
-						</tr>
 					</table>
 				</div>
 			</div>
@@ -1266,14 +1109,14 @@
 		<!-- container -->
 		<script>
 			var statusGroup = {
-                parentCount: 10,
-				passParent: 6,
+                parentCount: 9,
+				passParent: 7,
 				failParent: 2,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
-				skipParent: 2,
-				exceptionsParent: 4,
+				skipParent: 0,
+				exceptionsParent: 2,
 				childCount: 0,
 				passChild: 0,
 				failChild: 0,
@@ -1298,7 +1141,7 @@
 		</script>
 		<script>
 			var timeline = {
-			        "AdminIsAbleToLoginWIthValidCredentials":9.985,"CoachRecievesDocumentSharedByTeacher":0.258,"CoachIsAbleToLoginWIthValidCredentials":8.271,"ErrorMessageShowsWhenEnteringAnInvalidPassword":3.482,"ErrorMessageShowsWhenEnteringAnInvalidEmail":1.293,"CorporatePageIsOpenWhenUserClickOnLearnMore":6.81,"ModalWindowOpenWhenUserClickOnDownloadLink":0.895,"ErrorMessageShowsWhenLoginWithoutCredentials":0.397,"TeacherCreatesAndShareAdocumentToCoach":0.003,"TeacherIsAbleToLoginWIthValidCredentials":3.395
+			        "CorporatePageIsOpenWhenUserClickOnLearnMore":69.002,"AdminIsAbleToLoginWIthValidCredentials":15.046,"CoachIsAbleToLoginWIthValidCredentials":16.035,"ErrorMessageShowsWhenEnteringAnInvalidEmail":6.628,"ErrorMessageShowsWhenEnteringAnInvalidPassword":9.256,"ErrorMessageShowsWhenLoginWithoutCredentials":4.067,"ModalWindowOpenWhenUserClickOnDownloadLink":0.93,"TeacherIsAbleToLoginWIthValidCredentials":5.202,"TeacherCreatesAndShareAdocumentToCoach":83.9
 			};
 		</script>
 		<script src='https://cdn.rawgit.com/extent-framework/extent-github-cdn/b65cd69/v3html/js/extent.js' type='text/javascript'></script>

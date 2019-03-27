@@ -1,5 +1,6 @@
 package dashboard;
 
+import dto.NotificationDto;
 import dto.UserDTO;
 import generic.BaseTest;
 
@@ -128,14 +129,34 @@ public class LoginTest extends BaseTest {
 
     @Test(testName = "UI", groups = {"default", "login", "teacher"})
     public void TeacherCreatesAndShareAdocumentToCoach() {
-        throw new SkipException("Test in progress");
+        int lastNotificationRecieved = 0;
+        String teachersDocument = "Random Text";
+        UserDTO user = getContext().findUser("teacher");
+        getContext().getPageHandler().loginPage().logInWith(user);
+        getContext().getPageHandler().dashboardPage().navigateToMyVideosAndFiels();
+        getContext().getPageHandler().dashboardPage().createNewDocument("document");
+        getContext().getPageHandler().dashboardPage().writeAndShareDocument(teachersDocument);
+        getContext().getPageHandler().dashboardPage().shareWithModalBox("Coach","please review my Document");
+        getContext().getPageHandler().dashboardPage().logOut();
+
+         user = getContext().findUser("coach");
+        getContext().getPageHandler().loginPage().logInWith(user);
+        List<NotificationDto> notifications  = getContext().getPageHandler().dashboardPage().getListOfNotifications();
+        boolean notificationIsEmpty = notifications == null || notifications.isEmpty();
+        if(notificationIsEmpty){
+            Assert.assertFalse(notificationIsEmpty,"No notification were found");
+        }
+        //I can use the API to fectch the name of the teacher, at the moment this value is hardcoded
+        //we can also validate date of the message and content type
+        Assert.assertEquals(notifications.get(lastNotificationRecieved).getSender(),"Talent Teacher");
+        Assert.assertEquals(notifications.get(lastNotificationRecieved).getDocumentType(),"shared a document with you");
+
+        String coachReadsDocument = getContext().getPageHandler().dashboardPage().readLatestDocumentsBy("User Name","Talent Teacher");
+        Assert.assertEquals(coachReadsDocument,teachersDocument)rafael;
+
     }
 
-    @Test(testName = "UI", groups = {"default", "login", "coach"})
-    public void CoachRecievesDocumentSharedByTeacher() {
-        throw new SkipException("Test in progress");
-    }
 
 
-
+    //getDriver().findElement(By.xpath("@title='Select which field to filter on'"))
 }
