@@ -152,7 +152,7 @@ public class LoginTest extends BaseTest {
         Assert.assertEquals(notifications.get(lastNotificationRecieved).getDocumentType(),"shared a document with you");
 
         String coachReadsDocument = getContext().getPageHandler().dashboardPage().readLatestDocumentsBy("User Name","Talent Teacher");
-        Assert.assertEquals(coachReadsDocument,teachersDocument)rafael;
+        Assert.assertEquals(coachReadsDocument,teachersDocument);
 
     }
 

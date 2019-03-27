@@ -2,18 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3906ef03-c81b-402a-b4b9-94d922f08530" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/$HOME" beforeDir="false" afterPath="$PROJECT_DIR$/$HOME" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/$HOME.1" beforeDir="false" afterPath="$PROJECT_DIR$/$HOME.1" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestReport/TalentAutomationReport.html" beforeDir="false" afterPath="$PROJECT_DIR$/TestReport/TalentAutomationReport.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/IDashboardPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/IDashboardPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/ILoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/ILoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/WebBasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/WebBasePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/web/DashboardWebPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/web/DashboardWebPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/web/LoginWebPageWeb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/web/LoginWebPageWeb.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/Context.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/Context.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/dashboard/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/dashboard/LoginTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/TalentTestSuite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/TalentTestSuite.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -324,7 +313,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553673216302" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553673381558" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/build.gradle" />
   </component>
   <component name="RunDashboard">
@@ -427,8 +416,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.LoginTest.TeacherCreatesAndShareAdocumentToCoach" />
         <item itemvalue="TestNG./home/fanvel/projectFromGit/talent-ui-test-automation/src/test/resources/TalentTestSuite.xml" />
+        <item itemvalue="TestNG.LoginTest.TeacherCreatesAndShareAdocumentToCoach" />
         <item itemvalue="TestNG.LoginTest" />
         <item itemvalue="TestNG.LoginTest.TeacherIsAbleToLoginWIthValidCredentials" />
         <item itemvalue="TestNG.LoginTest.ModalWindowOpenWhenUserClickOnDownloadLink" />
@@ -482,26 +471,25 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-2" width="1600" height="902" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49568966" visible="true" weight="0.25933075" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.496139" visible="true" weight="0.25933075" />
       <window_info id="Designer" order="1" />
       <window_info id="Image Layers" order="2" />
       <window_info id="UI Designer" order="3" />
-      <window_info id="Structure" order="4" sideWeight="0.50431037" side_tool="true" visible="true" weight="0.25933075" />
+      <window_info id="Structure" order="4" sideWeight="0.503861" side_tool="true" visible="true" weight="0.25933075" />
       <window_info id="Favorites" order="5" sideWeight="0.50323415" side_tool="true" weight="0.25933075" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Learn" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32988358" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32988358" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.39974126" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39974126" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Build" order="7" weight="0.32988358" />
       <window_info anchor="bottom" id="sbt-shell-toolwindow" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32988358" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32988358" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.32988358" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32988358" />
