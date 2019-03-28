@@ -1,6 +1,7 @@
 package utils;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.sun.jna.platform.win32.WinBase;
 import dto.UserDTO;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
@@ -85,8 +86,13 @@ public class Context {
         WebDriver driver = null;
         String seleniumHub = this.GetValueOnEnvironmentProperties(PropertiesMapper.SELENIUMHUB);
         String seleniumPort = this.GetValueOnEnvironmentProperties(PropertiesMapper.SELENIUMPORT);
+        String executionMode = this.GetValueOnEnvironmentProperties(PropertiesMapper.EXECUTIONMODE);
         String hubURL = String.format("%1$s:%2$s/wd/hub", seleniumHub, seleniumPort);
         try {
+            if(!executionMode.isEmpty() && executionMode.equalsIgnoreCase("soucelab")){
+                String soucelabURl = this.GetValueOnEnvironmentProperties(PropertiesMapper.SOUCELAB_URL);
+                hubURL = soucelabURl;
+            }
             driver = (new RemoteWebDriver(new URL(hubURL), getDesiredCapabilities()));
         } catch (MalformedURLException ex) {
             logger.error("error on initializing web driver" + ex.getMessage() + " " + Arrays.toString(ex.getStackTrace()));
@@ -135,7 +141,15 @@ public class Context {
 
     private DesiredCapabilities getDesiredCapabilities() {
         DesiredCapabilities cap = new DesiredCapabilities();
+        String userName = this.GetValueOnEnvironmentProperties(PropertiesMapper.SOUCELAB_USERNAME);
+        String soucelabKey = this.GetValueOnEnvironmentProperties(PropertiesMapper.SOUCELAB_ACCESSKEY);
+        String soucelabPlatform = this.GetValueOnEnvironmentProperties(PropertiesMapper.SOUCELAB_PLATFORM);
+        String soucelabVersion = this.GetValueOnEnvironmentProperties(PropertiesMapper.SOUCELAB_VERSION);
+        String soucelabBuild = this.GetValueOnEnvironmentProperties(PropertiesMapper.SOUCELAB_BUILD);
+        String soucelabName = this.GetValueOnEnvironmentProperties(PropertiesMapper.SOUCELAB_NAME);
         String browser = this.GetValueOnEnvironmentProperties(PropertiesMapper.BROWSERNAME);
+
+        String executionMode = this.GetValueOnEnvironmentProperties(PropertiesMapper.EXECUTIONMODE);
         if (browser == null) {
             logger.error("browser field is empty in the properties file");
 
@@ -152,6 +166,15 @@ public class Context {
             logger.error(String.format("browser with name %1$s not valid", String.valueOf(DesiredCapabilities.chrome())));
         }
         cap.setCapability("browserName", browser);
+        if(!executionMode.isEmpty() && executionMode.equalsIgnoreCase("soucelab")){
+            cap.setCapability("username", userName);
+            cap.setCapability("accessKey", soucelabKey);
+           // cap.setCapability("browserName", browser);
+            cap.setCapability("platform", soucelabPlatform);
+            cap.setCapability("version", soucelabVersion);
+            cap.setCapability("build", soucelabBuild);
+            cap.setCapability("name", soucelabName);
+        }
         return cap;
 
 
@@ -177,6 +200,14 @@ public class Context {
         EnviromentProperties.put(PropertiesMapper.SELENIUMHUB, environmentProperties.getProperty("selenium.hub"));
         EnviromentProperties.put(PropertiesMapper.SELENIUMPORT, environmentProperties.getProperty("selenium.port"));
         EnviromentProperties.put(PropertiesMapper.BROWSERNAME, environmentProperties.getProperty("browsername"));
+        EnviromentProperties.put(PropertiesMapper.EXECUTIONMODE, environmentProperties.getProperty("executionmode"));
+        EnviromentProperties.put(PropertiesMapper.SOUCELAB_USERNAME, environmentProperties.getProperty("soucelab.username"));
+        EnviromentProperties.put(PropertiesMapper.SOUCELAB_ACCESSKEY, environmentProperties.getProperty("soucelab.accessKey"));
+        EnviromentProperties.put(PropertiesMapper.SOUCELAB_PLATFORM, environmentProperties.getProperty("soucelab.platform"));
+        EnviromentProperties.put(PropertiesMapper.SOUCELAB_VERSION, environmentProperties.getProperty("soucelab.version"));
+        EnviromentProperties.put(PropertiesMapper.SOUCELAB_BUILD, environmentProperties.getProperty("soucelab.build"));
+        EnviromentProperties.put(PropertiesMapper.SOUCELAB_NAME, environmentProperties.getProperty("soucelab.name"));
+        EnviromentProperties.put(PropertiesMapper.SOUCELAB_URL, environmentProperties.getProperty("soucelab.url"));
     }
 
     private Properties getEnvironmentProperties() {

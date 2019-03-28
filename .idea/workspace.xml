@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3906ef03-c81b-402a-b4b9-94d922f08530" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/$HOME" beforeDir="false" afterPath="$PROJECT_DIR$/$HOME" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestReport/TalentAutomationReport.html" beforeDir="false" afterPath="$PROJECT_DIR$/TestReport/TalentAutomationReport.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utils/Context.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/Context.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utils/PropertiesMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/PropertiesMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/dev-environment.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/dev-environment.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/qa-environment.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/qa-environment.properties" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -53,127 +59,124 @@
     <favorites_list name="telent-test" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/dashboard/LoginTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="203">
-              <caret line="154" column="69" selection-start-line="154" selection-start-column="69" selection-end-line="154" selection-end-column="69" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pages/ILoginPage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="16" selection-start-line="16" selection-end-line="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pages/web/DashboardWebPage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="233">
-              <caret line="153" column="79" selection-start-line="153" selection-start-column="79" selection-end-line="153" selection-end-column="79" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2298#2299#0" expanded="true" />
-                <element signature="e#2355#2356#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/TalentTestSuite.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="67" selection-start-line="7" selection-start-column="67" selection-end-line="7" selection-end-column="67" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/dto/NotificationDto.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-8">
-              <caret line="10" column="42" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
-              <folding>
-                <element signature="e#128#129#0" expanded="true" />
-                <element signature="e#157#158#0" expanded="true" />
-                <element signature="e#237#238#0" expanded="true" />
-                <element signature="e#268#269#0" expanded="true" />
-                <element signature="e#295#296#0" expanded="true" />
-                <element signature="e#335#336#0" expanded="true" />
-                <element signature="e#367#368#0" expanded="true" />
-                <element signature="e#406#407#0" expanded="true" />
-                <element signature="e#441#442#0" expanded="true" />
-                <element signature="e#497#498#0" expanded="true" />
-                <element signature="e#545#546#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.testng/testng/6.14.3/bfd2538501a129a142fe8366169c48b91609dc0b/testng-6.14.3-sources.jar!/org/testng/SuiteRunnerWorker.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="163">
-              <caret line="51" selection-start-line="51" selection-end-line="51" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pages/IDashboardPage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="10" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pages/WebBasePage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="301">
-              <caret line="45" column="73" selection-start-line="45" selection-start-column="73" selection-end-line="45" selection-end-column="73" />
-              <folding>
-                <element signature="e#777#778#0" expanded="true" />
-                <element signature="e#820#821#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pages/web/LoginWebPageWeb.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="39" column="42" selection-start-line="39" selection-start-column="42" selection-end-line="39" selection-end-column="42" />
-              <folding>
-                <element signature="e#1446#1447#0" expanded="true" />
-                <element signature="e#2352#2353#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.testng/testng/6.14.3/bfd2538501a129a142fe8366169c48b91609dc0b/testng-6.14.3-sources.jar!/org/testng/internal/Invoker.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="137">
-              <caret line="592" selection-start-line="592" selection-end-line="592" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.72806257">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/test/java/dashboard/LoginTest.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="105">
+                  <caret line="18" column="16" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/TestReport/TalentAutomationReport.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-15946">
+                  <caret line="31" column="4" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/utils/Context.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="495">
+                  <caret line="209" column="62" selection-start-line="209" selection-start-column="62" selection-end-line="209" selection-end-column="62" />
+                  <folding>
+                    <element signature="e#2489#2490#0" expanded="true" />
+                    <element signature="e#2518#2519#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/utils/PropertiesMapper.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="225">
+                  <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/test/resources/config.properties">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="15">
+                  <caret line="1" selection-start-line="1" selection-end-line="1" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/test/resources/dev-environment.properties">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="165">
+                  <caret line="11" column="50" selection-start-line="11" selection-start-column="50" selection-end-line="11" selection-end-column="50" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/test/resources/qa-environment.properties">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="165">
+                  <caret line="11" column="50" selection-start-line="11" selection-start-column="50" selection-end-line="11" selection-end-column="50" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/pages/ILoginPage.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="210">
+                  <caret line="16" selection-start-line="16" selection-end-line="16" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/pages/web/DashboardWebPage.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="233">
+                  <caret line="153" column="79" selection-start-line="153" selection-start-column="79" selection-end-line="153" selection-end-column="79" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                    <element signature="e#2298#2299#0" expanded="true" />
+                    <element signature="e#2355#2356#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/test/resources/TalentTestSuite.xml">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="105">
+                  <caret line="7" column="67" selection-start-line="7" selection-start-column="67" selection-end-line="7" selection-end-column="67" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/test/resources/dev-environment.properties">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="165">
+                  <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -195,15 +198,19 @@
         <option value="$PROJECT_DIR$/src/main/java/pages/IWebPageWrapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/pages/WebPageWrapper.java" />
         <option value="$PROJECT_DIR$/src/test/java/generic/BaseTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/utils/Context.java" />
         <option value="$PROJECT_DIR$/src/main/java/pages/web/LoginWebPageWeb.java" />
         <option value="$PROJECT_DIR$/src/main/java/pages/WebBasePage.java" />
         <option value="$PROJECT_DIR$/src/main/java/pages/ILoginPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/dto/NotificationDto.java" />
         <option value="$PROJECT_DIR$/src/main/java/pages/IDashboardPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/pages/web/DashboardWebPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/dashboard/LoginTest.java" />
         <option value="$PROJECT_DIR$/src/test/resources/TalentTestSuite.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/dashboard/LoginTest.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/config.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/utils/PropertiesMapper.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/dev-environment.properties" />
+        <option value="$PROJECT_DIR$/src/test/resources/qa-environment.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/utils/Context.java" />
       </list>
     </option>
   </component>
@@ -252,31 +259,6 @@
               <item name="telent-test" type="b2602c69:ProjectViewProjectNode" />
               <item name="talent-ui-test-automation" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="dto" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="telent-test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="talent-ui-test-automation" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="telent-test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="talent-ui-test-automation" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="telent-test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="talent-ui-test-automation" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
@@ -299,12 +281,15 @@
               <item name="talent-ui-test-automation" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="generic" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="telent-test" type="b2602c69:ProjectViewProjectNode" />
               <item name="talent-ui-test-automation" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="TestReport" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -313,7 +298,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553673381558" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553752674420" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/build.gradle" />
   </component>
   <component name="RunDashboard">
@@ -328,7 +313,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG./home/fanvel/projectFromGit/talent-ui-test-automation/src/test/resources/TalentTestSuite.xml">
+  <component name="RunManager" selected="TestNG.LoginTest.ErrorMessageShowsWhenLoginWithoutCredentials">
     <configuration name="LoginTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="telent.test.org.telent-test.test" />
       <extension name="coverage">
@@ -346,7 +331,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginTest.ModalWindowOpenWhenUserClickOnDownloadLink" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="LoginTest.ErrorMessageShowsWhenEnteringAnInvalidPassword" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="telent.test.org.telent-test.test" />
       <extension name="coverage">
         <pattern>
@@ -357,9 +342,27 @@
       <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/TalentTestSuite.xml" />
       <option name="PACKAGE_NAME" value="dashboard" />
       <option name="MAIN_CLASS_NAME" value="dashboard.LoginTest" />
-      <option name="METHOD_NAME" value="ModalWindowOpenWhenUserClickOnDownloadLink" />
+      <option name="METHOD_NAME" value="ErrorMessageShowsWhenEnteringAnInvalidPassword" />
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="PARAMETERS" value="0" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginTest.ErrorMessageShowsWhenLoginWithoutCredentials" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="telent.test.org.telent-test.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dashboard.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="dashboard" />
+      <option name="MAIN_CLASS_NAME" value="dashboard.LoginTest" />
+      <option name="METHOD_NAME" value="ErrorMessageShowsWhenLoginWithoutCredentials" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -386,24 +389,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginTest.TeacherIsAbleToLoginWIthValidCredentials" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="telent.test.org.telent-test.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="dashboard.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="dashboard" />
-      <option name="MAIN_CLASS_NAME" value="dashboard.LoginTest" />
-      <option name="METHOD_NAME" value="TeacherIsAbleToLoginWIthValidCredentials" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="/home/fanvel/projectFromGit/talent-ui-test-automation/src/test/resources/TalentTestSuite.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="telent.test.org.telent-test.test" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/TalentTestSuite.xml" />
@@ -416,11 +401,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.LoginTest.ErrorMessageShowsWhenLoginWithoutCredentials" />
+        <item itemvalue="TestNG.LoginTest.ErrorMessageShowsWhenEnteringAnInvalidPassword" />
         <item itemvalue="TestNG./home/fanvel/projectFromGit/talent-ui-test-automation/src/test/resources/TalentTestSuite.xml" />
         <item itemvalue="TestNG.LoginTest.TeacherCreatesAndShareAdocumentToCoach" />
         <item itemvalue="TestNG.LoginTest" />
-        <item itemvalue="TestNG.LoginTest.TeacherIsAbleToLoginWIthValidCredentials" />
-        <item itemvalue="TestNG.LoginTest.ModalWindowOpenWhenUserClickOnDownloadLink" />
       </list>
     </recent_temporary>
   </component>
@@ -438,41 +423,50 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="LoginTest_TeacherCreatesAndShareAdocumentToCoach - 2019.03.27 at 18h 21m 49s.xml">
-      <configuration name="LoginTest.TeacherCreatesAndShareAdocumentToCoach" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="LoginTest_TeacherCreatesAndShareAdocumentToCoach - 2019.03.27 at 18h 24m 30s.xml">
-      <configuration name="LoginTest.TeacherCreatesAndShareAdocumentToCoach" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="LoginTest_TeacherCreatesAndShareAdocumentToCoach - 2019.03.27 at 18h 26m 52s.xml">
-      <configuration name="LoginTest.TeacherCreatesAndShareAdocumentToCoach" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="LoginTest_TeacherCreatesAndShareAdocumentToCoach - 2019.03.27 at 18h 32m 24s.xml">
-      <configuration name="LoginTest.TeacherCreatesAndShareAdocumentToCoach" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="LoginTest_TeacherCreatesAndShareAdocumentToCoach - 2019.03.27 at 18h 35m 38s.xml">
-      <configuration name="LoginTest.TeacherCreatesAndShareAdocumentToCoach" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="LoginTest_TeacherCreatesAndShareAdocumentToCoach - 2019.03.27 at 18h 57m 04s.xml">
-      <configuration name="LoginTest.TeacherCreatesAndShareAdocumentToCoach" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="_home_fanvel_projectFromGit_talent-ui-test-automation_src_test_resources_TalentTestSuite_xml - 2019.03.27 at 19h 14m 13s.xml">
+    <history-entry file="_home_fanvel_projectFromGit_talent-ui-test-automation_src_test_resources_TalentTestSuite_xml - 2019.03.27 at 21h 02m 04s.xml">
       <configuration name="/home/fanvel/projectFromGit/talent-ui-test-automation/src/test/resources/TalentTestSuite.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="LoginTest_TeacherCreatesAndShareAdocumentToCoach - 2019.03.27 at 19h 14m 31s.xml">
-      <configuration name="LoginTest.TeacherCreatesAndShareAdocumentToCoach" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="LoginTest_TeacherCreatesAndShareAdocumentToCoach - 2019.03.27 at 19h 17m 21s.xml">
-      <configuration name="LoginTest.TeacherCreatesAndShareAdocumentToCoach" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="_home_fanvel_projectFromGit_talent-ui-test-automation_src_test_resources_TalentTestSuite_xml - 2019.03.27 at 19h 19m 01s.xml">
+    <history-entry file="_home_fanvel_projectFromGit_talent-ui-test-automation_src_test_resources_TalentTestSuite_xml - 2019.03.27 at 21h 07m 55s.xml">
       <configuration name="/home/fanvel/projectFromGit/talent-ui-test-automation/src/test/resources/TalentTestSuite.xml" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="_home_fanvel_projectFromGit_talent-ui-test-automation_src_test_resources_TalentTestSuite_xml - 2019.03.27 at 23h 57m 03s.xml">
+      <configuration name="/home/fanvel/projectFromGit/talent-ui-test-automation/src/test/resources/TalentTestSuite.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="LoginTest_ErrorMessageShowsWhenLoginWithoutCredentials - 2019.03.27 at 23h 57m 48s.xml">
+      <configuration name="LoginTest.ErrorMessageShowsWhenLoginWithoutCredentials" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="LoginTest_ErrorMessageShowsWhenLoginWithoutCredentials - 2019.03.28 at 07h 51m 47s.xml">
+      <configuration name="LoginTest.ErrorMessageShowsWhenLoginWithoutCredentials" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="LoginTest_ErrorMessageShowsWhenLoginWithoutCredentials - 2019.03.28 at 07h 55m 18s.xml">
+      <configuration name="LoginTest.ErrorMessageShowsWhenLoginWithoutCredentials" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="LoginTest_ErrorMessageShowsWhenLoginWithoutCredentials - 2019.03.28 at 08h 14m 24s.xml">
+      <configuration name="LoginTest.ErrorMessageShowsWhenLoginWithoutCredentials" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="LoginTest_TeacherCreatesAndShareAdocumentToCoach - 2019.03.28 at 18h 45m 01s.xml">
+      <configuration name="LoginTest.TeacherCreatesAndShareAdocumentToCoach" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="_home_fanvel_projectFromGit_talent-ui-test-automation_src_test_resources_TalentTestSuite_xml - 2019.03.28 at 18h 47m 45s.xml">
+      <configuration name="/home/fanvel/projectFromGit/talent-ui-test-automation/src/test/resources/TalentTestSuite.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="LoginTest_ErrorMessageShowsWhenEnteringAnInvalidPassword - 2019.03.28 at 18h 56m 05s.xml">
+      <configuration name="LoginTest.ErrorMessageShowsWhenEnteringAnInvalidPassword" configurationId="TestNG" />
+    </history-entry>
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-2" width="1600" height="902" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.496139" visible="true" weight="0.25933075" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.496139" visible="true" weight="0.25933075" />
       <window_info id="Designer" order="1" />
       <window_info id="Image Layers" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -482,14 +476,14 @@
       <window_info id="Learn" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32988358" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32988358" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32988358" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39974126" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32988358" />
       <window_info anchor="bottom" id="Build" order="7" weight="0.32988358" />
       <window_info anchor="bottom" id="sbt-shell-toolwindow" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32988358" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32988358" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.32988358" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32988358" />
@@ -552,6 +546,18 @@
           <line>100</line>
           <properties />
           <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/utils/Context.java</url>
+          <line>92</line>
+          <properties />
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/utils/Context.java</url>
+          <line>143</line>
+          <properties />
+          <option name="timeStamp" value="26" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -679,28 +685,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TestReport/TalentAutomationReport.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="31" column="4" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.seleniumhq.selenium/selenium-support/2.41.0/67d2ea0ca0860c1434528650981e16cc5aef475b/selenium-support-2.41.0-sources.jar!/org/openqa/selenium/support/ui/Select.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-3832">
           <caret line="41" column="9" selection-start-line="41" selection-start-column="9" selection-end-line="41" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/utils/Context.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1432">
-          <caret line="97" column="52" selection-start-line="97" selection-start-column="52" selection-end-line="97" selection-end-column="52" />
-          <folding>
-            <element signature="e#2489#2490#0" expanded="true" />
-            <element signature="e#2518#2519#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -803,17 +791,63 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/dashboard/LoginTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="154" column="69" selection-start-line="154" selection-start-column="69" selection-end-line="154" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/TalentTestSuite.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="67" selection-start-line="7" selection-start-column="67" selection-end-line="7" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestReport/TalentAutomationReport.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-15946">
+          <caret line="31" column="4" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/config.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/utils/PropertiesMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/dev-environment.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="50" selection-start-line="11" selection-start-column="50" selection-end-line="11" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/qa-environment.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="50" selection-start-line="11" selection-start-column="50" selection-end-line="11" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/utils/Context.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="209" column="62" selection-start-line="209" selection-start-column="62" selection-end-line="209" selection-end-column="62" />
+          <folding>
+            <element signature="e#2489#2490#0" expanded="true" />
+            <element signature="e#2518#2519#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/dashboard/LoginTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="18" column="16" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
         </state>
       </provider>
     </entry>
