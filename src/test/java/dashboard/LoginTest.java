@@ -124,7 +124,7 @@ public class LoginTest extends BaseTest {
         String expectedUrl = "https://www.torsh.co/";
         getContext().getPageHandler().loginPage().clickOnLearnMoreButton();
         String actualURl = getContext().getPageHandler().loginPage().getCurrentURl();
-        Assert.assertEquals(expectedUrl,actualURl);
+        Assert.assertEquals(actualURl,expectedUrl);
     }
 
     @Test(testName = "UI", groups = {"default", "login", "teacher"})

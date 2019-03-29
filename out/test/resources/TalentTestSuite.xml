@@ -5,7 +5,7 @@
         <listener class-name="generic.ReportListener"/>
     </listeners>
     <test verbose="9" preserve-order="true"
-          name="TalentTestSuite" parallel="methods" thread-count="5">
+          name="TalentTestSuite" parallel="methods" thread-count="2">
         <classes>
             <class  name="dashboard.LoginTest"  />
 

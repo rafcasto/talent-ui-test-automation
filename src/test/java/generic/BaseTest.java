@@ -35,10 +35,15 @@ public class BaseTest {
 
     @AfterMethod
     public void removeSessions() {
-        getDriver().close();
-        if (getDriver() != null) {
-            getDriver().quit();
+        try{
+            getDriver().close();
+            if (getDriver() != null) {
+                getDriver().quit();
+            }
+        }catch (Exception ex){
+
         }
+
 
     }
 

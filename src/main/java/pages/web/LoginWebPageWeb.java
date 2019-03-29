@@ -53,7 +53,11 @@ public class LoginWebPageWeb extends WebBasePage implements ILoginPage {
     @Override
     public String getCurrentURl() {
         ArrayList<String> tabs = new ArrayList<>(driver.getWindowHandles());
-        driver.switchTo().window(tabs.get(1));
+        boolean moreThanOneTab = tabs.size() > 1;
+        if(moreThanOneTab){
+            driver.switchTo().window(tabs.get(1));
+        }
+
         return getURl();
     }
 
@@ -61,7 +65,7 @@ public class LoginWebPageWeb extends WebBasePage implements ILoginPage {
     public void clickOnLearnMoreButton() {
         driver.findElement(learnMoreButton).click();
 
-        //waitForElement(corporateSideMenu);
+        waitForElement(By.id("sidebar"));
     }
 
     @Override

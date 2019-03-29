@@ -9,6 +9,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.util.ArrayList;
 import java.util.concurrent.TimeUnit;
 
 public class WebBasePage {
@@ -36,6 +37,23 @@ public class WebBasePage {
 
 
    public void waitForElement(By locator){
+       try{
+         privateWaitForElement(locator);
+           }
+
+       catch (TimeoutException ex){
+        privateWaitForElement(locator);
+       }
+
+   }
+
+   private void privateWaitForElement(By locator){
+       ArrayList<String> tabs = new ArrayList<>(driver.getWindowHandles());
+       boolean moreThanOneTab = tabs.size() > 1;
+       if(moreThanOneTab){
+           driver.navigate().refresh();
+           driver.switchTo().window(tabs.get(1));
+       }
        WebDriverWait wait = new WebDriverWait(driver,30 );
        wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
    }
