@@ -47,7 +47,22 @@ git clone https://github.com/rafcasto/talent-ui-test-automation.git
 
 ```
 
-2. using Intellij IDE, open the project 
+2. using Intellij IDE, open the project
+
+## Setting up selenium grid 
+
+Setting up selenium grid hub 
+
+```
+$ java -jar selenium-server-standalone.jar -role hub
+
+```
+Setting up selenium grid node 
+```
+$ java -Dwebdriver.gecko.driver=./geckodriver -jar selenium-server-standalone.jar -role node -hub http://localhost:4444/grid/register/
+```
+
+ 
 
 3. in the project go to the test folder -> resources -> right click on the TalentTestSuite.xml file to execute all the test
 ## Running the tests
