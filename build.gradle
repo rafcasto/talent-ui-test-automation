@@ -37,6 +37,8 @@ dependencies {
     compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.9.8'
 // https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-firefox-driver
     compile group: 'org.seleniumhq.selenium', name: 'selenium-firefox-driver', version: '3.141.59'
+// https://mvnrepository.com/artifact/org.json/json
+    compile group: 'org.json', name: 'json', version: '20090211'
 
 }
 
