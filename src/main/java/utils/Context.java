@@ -7,6 +7,7 @@ import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.BrowserType;
@@ -120,8 +121,10 @@ public class Context {
     private WebDriver startLocalBrowser() {
         WebDriver driver = null;
         switch (getDesiredCapabilities().getBrowserName()) {
+
             case BrowserType.CHROME:
-                driver = new ChromeDriver();
+                ChromeOptions opt = new ChromeOptions();
+                driver = new ChromeDriver(opt);
                 break;
             case BrowserType.FIREFOX:
                 driver = new FirefoxDriver();
